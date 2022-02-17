@@ -1,9 +1,6 @@
 /* 
     LocaleBot v1.0.0
     Last Updated: 16th Feb 2022.
-    https://medium.com/davao-js/2019-tutorial-creating-your-first-simple-discord-bot-47fc836a170b
-    https://www.digitaltrends.com/gaming/how-to-make-a-discord-bot/
-    https://discord.com/developers/applications/943185550930759761/information
 */
 
 const Discord = require('discord.js')
