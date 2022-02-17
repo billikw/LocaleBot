@@ -58,6 +58,7 @@ bot.on("message", msg => {
                 if (msg.content.includes(otherUrls[i])){
                     msg.react(ebaySuffixAndFlags[13][1])
                     msg.react(leftArrow)
+                    break
                 }
             }
         }
