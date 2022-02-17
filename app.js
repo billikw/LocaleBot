@@ -31,6 +31,9 @@ const ebaySuffixAndFlags = [
     ['.com.sg', '🇸🇬']    // SINGAPORE
 ]
 
+const otherUrls = ["https://shopgoodwill.com", "https://www.shopgoodwill.com", "https://merc.li", "https://www.merc.li", "https://www.mercari.com", "https://mercari.com",]
+
+
 bot.once('ready', () => {
     console.log(`BOT ONLINE!`)
 })
