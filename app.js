@@ -58,13 +58,12 @@ bot.on("message", msg => {
         } else {
             for (let i=0; i<otherUrls.length; i++){
                 if (msg.content.includes(otherUrls[i])){
-                    msg.react(ebaySuffixAndFlags[13][1])
+                    msg.react(ebaySuffixAndFlags[ebaySuffixAndFlags.length-1][1]) // Add USA reactions as all the 'other' sites are US based.
                     msg.react(leftArrow)
                     break
                 }
             }
         }
-    
 })
 
 
