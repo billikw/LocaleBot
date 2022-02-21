@@ -1,5 +1,5 @@
 /* 
-    LocaleBot v1.0.1)
+    LocaleBot v1.0.1
     Created: 15th Feb 2022.
     Last Updated: 19th Feb 2022.
 */
