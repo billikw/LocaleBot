@@ -51,7 +51,7 @@ bot.on("message", msg => {
         if (validUrl) {
                 msg.react(validUrl)
                 msg.react(leftArrow)
-                console.log(`Responded to ${msg.content.match(expression)[0]} with ${validUrl} ${leftArrow}`)
+                console.log(`Responded to ${msgContent[0]} with ${validUrl} ${leftArrow}`)
         }
     }
 })
