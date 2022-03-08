@@ -9,6 +9,7 @@
 
 */
 
+const exp = require('constants')
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 const auth = require('./auth.json')
@@ -48,12 +49,14 @@ bot.once('ready', () => {
 
 bot.on("message", msg => {
 
-    if (msg.content.match(expression)) {
-                msg.react(urls[msg.content.match(expression)[1]])
+    const validUrl = urls[msg.content.match(expression)[1]]
+    
+    if (validUrl) {
+                msg.react(validUrl)
                 msg.react(leftArrow)
-                console.log(`Responded to ${msg.content.match(expression)[0]} with ${urls[msg.content.match(expression)[1]]} ${leftArrow}`)
+                console.log(`Responded to ${msg.content.match(expression)[0]} with ${validUrl} ${leftArrow}`)
             }
-
+            
 })
 
 bot.login(auth.token)
