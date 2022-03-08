@@ -1,7 +1,7 @@
 /* 
     LocaleBot v2.0.0
     Created: 15th Feb 2022.
-    Last Updated: 7th March 2022.
+    Last Updated: 8th March 2022.
 
     NOTE:
     Currently there is no way to tell the bot to listen to a specific channel.
@@ -48,15 +48,16 @@ bot.once('ready', () => {
 })
 
 bot.on("message", msg => {
-
-    const validUrl = urls[msg.content.match(expression)[1]]
     
-    if (validUrl) {
+    if (msg.content.match(expression)) {
+        const validUrl = urls[msg.content.match(expression)[1]]
+        
+        if (validUrl) {
                 msg.react(validUrl)
                 msg.react(leftArrow)
                 console.log(`Responded to ${msg.content.match(expression)[0]} with ${validUrl} ${leftArrow}`)
-            }
-            
+        }
+    }
 })
 
 bot.login(auth.token)
