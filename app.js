@@ -4,7 +4,6 @@
     Last Updated: 8th March 2022.
 */
 
-const exp = require('constants')
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 const auth = require('./auth.json')
